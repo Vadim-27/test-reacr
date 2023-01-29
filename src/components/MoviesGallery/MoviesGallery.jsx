@@ -1,17 +1,24 @@
-const MoviesGallery = ({movies}) => {
-    return (
-        <ul>
-            {movies.map(({ id, title, vote_count: vote, backdrop_pat }) => {
-                return (
-                  <li key={id}>
-                    <p>{title}</p>
-                    <p>vote_count: {vote}</p>
-                  </li>
-                );
-            })
-            }
-            
-        </ul>
-    )
-}
+const MoviesGallery = ({ movies, showModal }) => {
+  return (
+    <ul>
+      {movies.map(({ id, title, vote_count: votes, backdrop_path: image }) => {
+        return (
+          <li key={id}>
+            <p>{title}</p>
+            <p>Votes: {votes}</p>
+            <button
+              type="button"
+              onClick={() => {
+                showModal({ src: image, alt: title });
+              }}
+            >
+              Show poster
+            </button>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
 export default MoviesGallery;
