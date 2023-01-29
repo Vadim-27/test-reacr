@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-reacr/static/css/main.5ab2ae74.css",
+    "main.js": "/test-reacr/static/js/main.90e663d3.js",
+    "index.html": "/test-reacr/index.html",
+    "main.5ab2ae74.css.map": "/test-reacr/static/css/main.5ab2ae74.css.map",
+    "main.90e663d3.js.map": "/test-reacr/static/js/main.90e663d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ab2ae74.css",
+    "static/js/main.90e663d3.js"
+  ]
+}
